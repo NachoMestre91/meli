@@ -1,0 +1,52 @@
+.LP-Home {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
+.LI-Home {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px repeat(3, auto) 50px;
+  gap: 15px;
+}
+
+/* ====== COMPONENTE BUSQUEDA ======*/
+
+.CP-Busqueda {
+  background-color: #ffe600;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 50px;
+  position: fixed;
+  width: 100%;
+}
+.CI-Busqueda {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.CP-Lista-productos {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  background-color: #ffffff;
+}
+
+/* ====== MEDIAQUERIES MOVIL ==========*/
+
+@media only screen and (min-device-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  .LI-Home {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    /* grid-template-rows: 50px repeat(3, auto) 50px; */
+    gap: 15px;
+  }
+}
