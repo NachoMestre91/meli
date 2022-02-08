@@ -1,0 +1,109 @@
+/*========== CONTENEDORES ==========*/
+.CP-Detalle-Producto {
+  width: 100%;
+  height: auto;
+}
+.CI-Detalle-Producto {
+  display: grid;
+  grid-template-columns: 50px 2fr 1fr 50px;
+  grid-template-rows: 10px 2fr 1fr 10px;
+  gap: 10px;
+}
+/*========== Detalles producto ==========*/
+
+.I-Detalle-Producto {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 15px;
+}
+.I-Detalle-compra {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  place-content: flex-start;
+  align-items: center;
+}
+.Etiqueta-cantidad {
+  display: flex;
+
+  align-items: flex-start;
+  place-content: flex-start;
+}
+
+.I-descripcion-producto {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  place-content: flex-start;
+}
+.I-descripcion-producto {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.imagen-producto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: auto;
+  border-radius: 10px;
+}
+
+.Boton {
+  width: 100%;
+  background-color: #3084fd;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  margin: 15px 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px #00000014;
+  transition: all 0.3s ease-in-out;
+}
+.Boton:disabled {
+  background-color: #3085fdbb;
+}
+.Boton:hover {
+  color: #3084fd;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3084fd;
+}
+@media only screen and (min-device-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  .CI-Detalle-Producto {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 10px repeat(3, 1fr) 10px;
+    gap: 10px;
+  }
+  .I-Detalle-Producto {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* padding: 15px;
+    background-color: red; */
+  }
+  .I-Detalle-compra {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    /* display: flex;
+    place-content: center;
+    align-items: flex-start;
+    background-color: blue; */
+  }
+
+  .I-descripcion-producto {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    place-content: flex-start; */
+  }
+}
