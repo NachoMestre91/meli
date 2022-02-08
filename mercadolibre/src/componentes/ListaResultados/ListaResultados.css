@@ -1,0 +1,10 @@
+.CP-Contenedor-Lista {
+  width: 100%;
+  height: auto;
+}
+.CI-Tarjeta-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
