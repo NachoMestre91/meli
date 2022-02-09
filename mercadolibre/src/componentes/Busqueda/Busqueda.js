@@ -1,11 +1,11 @@
 import React from 'react';
 import './Busqueda.css';
-import Logo from '../../static/img/Logo_ML.png';
+// import Logo from '../../static/img/Logo_ML.png';
 
 const Busqueda = () => {
   return (
     <div className="CP-Busqueda-contenedor">
-      <img src={Logo} alt=""></img>
+      {/* <img src={Logo} alt=""></img> */}
 
       <div className="CP-Buscar-Resultados">
         <div className="CP-Buscar">
